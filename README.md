@@ -1,5 +1,5 @@
 
-# Warning: Personal Use Only
+# Warning: Personal Use Only (Basically for my sister)
 
 This application, **Nu Results - CGPA**, has been developed solely for personal use. It is intended for private purposes, and its functionality should not be used in any illegal, unauthorized, or malicious activities.
 
