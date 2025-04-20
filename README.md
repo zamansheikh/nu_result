@@ -1,13 +1,16 @@
+# nu_result
 
-# Warning: Personal Use Only (Basically for my sister)
+A new Flutter project.
 
-This application, **Nu Results - CGPA**, has been developed solely for personal use. It is intended for private purposes, and its functionality should not be used in any illegal, unauthorized, or malicious activities.
+## Getting Started
 
-Inspired from:(Kayum's Nu Result App)
-https://github.com/mdabdulkayum/NU_Result
+This project is a starting point for a Flutter application.
 
-## Disclaimer
+A few resources to get you started if this is your first Flutter project:
 
-- The developer is not responsible for any misuse of this application.
-- Any form of illegal use is strictly prohibited.
-- Users are fully responsible for ensuring compliance with local laws and regulations.
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

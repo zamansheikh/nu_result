@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "939409133167",
+    "project_id": "nu-result-e9e98",
+    "storage_bucket": "nu-result-e9e98.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939409133167:android:aaed42f235a2b6c52e879a",
+        "android_client_info": {
+          "package_name": "com.decodersfamily.nu_result"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKg2inJejHboTpQjj7hwVDMLvEgGQe6nM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
