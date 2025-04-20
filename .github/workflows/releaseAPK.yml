@@ -1,0 +1,46 @@
+name: Build Flutter APK and Create Release
+
+on:
+  push:
+    branches:
+      - main  # or your preferred branch
+
+# 👇 Add permissions to allow creating releases
+permissions:
+  contents: write  # Grants write access to repository contents, including releases
+
+jobs:
+  build:
+    name: Build APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      # # Generate .env file from GitHub secret
+      # - name: Generate .env file
+      #   run: echo "${{ secrets.ENV_FILE }}" > .env
+
+      - name: Install dependencies
+        run: flutter pub get
+        
+      # - name: Solve locale
+      #   run: flutter gen-l10n
+
+      - name: Build APK
+        run: flutter build apk --release
+
+      - name: Upload Release Asset
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0.${{ github.run_number }}
+          name: Release v1.0.${{ github.run_number }}
+          files: build/app/outputs/flutter-apk/app-release.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
