@@ -1,4 +1,4 @@
-package com.example.nu_result
+package com.decodersfamily.nu_result
 
 import io.flutter.embedding.android.FlutterActivity
 
