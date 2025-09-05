@@ -7,8 +7,8 @@
 ---
 
 ## ⚡ Short Description
-**Calculate CGPA & generate professional academic marksheets for NU Bangladesh students**
-*(79 characters - within 80 character limit)*
+**Static CGPA calculator & PDF marksheet generator for NU students - 100% offline**
+*(76 characters - within 80 character limit)*
 
 ---
 
@@ -53,12 +53,14 @@
 
 ### 🔐 Privacy & Security
 
-**Complete Data Protection**
-• All data stored locally on your device using SharedPreferences
-• No personal information transmitted to external servers
-• No ads, no tracking, no unnecessary permissions
-• Open-source transparency for community trust
-• GDPR compliant with user data protection
+**100% Static App with Zero Data Collection**
+• Completely static app - no data collection or transmission
+• All calculations happen locally on your device
+• PDF generation performed entirely offline
+• No internet required - complete offline functionality
+• No personal information stored or shared
+• No ads, no tracking, no user profiling
+• Privacy-first design principles
 
 ### 🚀 Technical Excellence
 
@@ -72,10 +74,11 @@
 ### 🎯 Perfect For
 
 • **National University Students** calculating semester CGPA
-• **Academic Planning** with visual performance analytics
+• **Academic Planning** with visual performance analytics  
 • **Professional Documentation** requiring official marksheet PDFs
-• **Academic Record Keeping** with persistent data storage
 • **Study Groups** sharing academic performance insights
+• **Students valuing privacy** with zero data collection
+• **Offline users** needing complete offline functionality
 
 ### 🌟 Why Choose NU Result?
 
@@ -112,7 +115,12 @@ Join our growing community of National University students:
 
 ### 🎖️ Developer
 
-Developed with ❤️ by **Zaman Sheikh** - A passionate developer committed to creating useful applications for the student community.
+Developed with ❤️ by **Zaman Sheikh** (ProgrammerNexus) - A passionate developer committed to creating useful, privacy-focused applications for the student community.
+
+**Contact:**
+• Email: zaman6545@gmail.com
+• Portfolio: zamansheikh.com
+• Company: ProgrammerNexus (programmernexus.com)
 
 ---
 
@@ -156,14 +164,17 @@ University App, Academic Analytics, Education Bangladesh, Student CGPA
 `https://zamansheikh.github.io/nu_result/privacy-policy.html`
 
 ### Developer Contact
-- **Email**: zamantech.dev@gmail.com
-- **Website**: https://github.com/zamansheikh/nu_result
+- **Email**: zaman6545@gmail.com
+- **Website**: https://zamansheikh.com
+- **Company**: https://www.programmernexus.com
+- **GitHub**: https://github.com/zamansheikh/nu_result
 - **Support**: Telegram Community via QR code in app
 
 ### App Permissions
 - **WRITE_EXTERNAL_STORAGE**: For PDF file generation and saving
 - **READ_EXTERNAL_STORAGE**: For accessing saved PDF files
 - **No network permissions required** - App works completely offline
+- **No sensitive permissions** - Privacy-focused design
 
 ### Target Audience
 - **Primary**: University students (18-25 years)
