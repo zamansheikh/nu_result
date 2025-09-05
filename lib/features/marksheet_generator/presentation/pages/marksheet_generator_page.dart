@@ -514,92 +514,87 @@ class _MarksheetGeneratorPageState extends State<MarksheetGeneratorPage> {
 
         pw.SizedBox(height: 15),
 
-        // QR Codes Section - Optimized Single Row Layout
+        // QR Codes Section - Custom Layout
         pw.Container(
           decoration: pw.BoxDecoration(
             border: pw.Border.all(color: PdfColors.grey400, width: 1),
             borderRadius: pw.BorderRadius.circular(12),
           ),
           padding: const pw.EdgeInsets.all(15),
-          child: pw.Row(
-            mainAxisAlignment: pw.MainAxisAlignment.spaceEvenly,
+          child: pw.Column(
             children: [
-              // PlayStore QR Code
-              pw.Expanded(
-                child: pw.Column(
-                  mainAxisSize: pw.MainAxisSize.min,
-                  children: [
-                    pw.Container(
-                      width: 70,
-                      height: 70,
-                      decoration: pw.BoxDecoration(
-                        border: pw.Border.all(color: PdfColors.grey400),
-                        borderRadius: pw.BorderRadius.circular(8),
+              pw.Row(
+                mainAxisAlignment: pw.MainAxisAlignment.spaceEvenly,
+                children: [
+                  pw.Row(
+                    children: [
+                      pw.Container(
+                        width: 70,
+                        height: 70,
+                        decoration: pw.BoxDecoration(
+                          border: pw.Border.all(color: PdfColors.grey400),
+                          borderRadius: pw.BorderRadius.circular(8),
+                        ),
+                        child: pw.Padding(
+                          padding: const pw.EdgeInsets.all(3),
+                          child: pw.Image(playstoreQr, fit: pw.BoxFit.cover),
+                        ),
                       ),
-                      child: pw.Padding(
-                        padding: const pw.EdgeInsets.all(3),
-                        child: pw.Image(playstoreQr, fit: pw.BoxFit.cover),
+                      pw.SizedBox(width: 10),
+                      pw.Column(
+                        crossAxisAlignment: pw.CrossAxisAlignment.start,
+                        children: [
+                          pw.Text(
+                            'Download App',
+                            style: pw.TextStyle(
+                              fontSize: 10,
+                              fontWeight: pw.FontWeight.bold,
+                            ),
+                          ),
+                          pw.Text(
+                            'Google Play Store',
+                            style: const pw.TextStyle(fontSize: 9),
+                          ),
+                        ],
                       ),
-                    ),
-                    pw.SizedBox(height: 4),
-                    pw.Text(
-                      'Download App',
-                      style: pw.TextStyle(
-                        fontSize: 8,
-                        fontWeight: pw.FontWeight.bold,
-                      ),
-                      textAlign: pw.TextAlign.center,
-                    ),
-                    pw.Text(
-                      'Google Play Store',
-                      style: const pw.TextStyle(fontSize: 7),
-                      textAlign: pw.TextAlign.center,
-                    ),
-                  ],
-                ),
-              ),
+                    ],
+                  ),
 
-              // Vertical Divider
-              pw.Container(
-                width: 1,
-                height: 90,
-                color: PdfColors.grey300,
-                margin: const pw.EdgeInsets.symmetric(horizontal: 15),
-              ),
-
-              // Telegram Community QR Code
-              pw.Expanded(
-                child: pw.Column(
-                  mainAxisSize: pw.MainAxisSize.min,
-                  children: [
-                    pw.Container(
-                      width: 70,
-                      height: 70,
-                      decoration: pw.BoxDecoration(
-                        border: pw.Border.all(color: PdfColors.grey400),
-                        borderRadius: pw.BorderRadius.circular(8),
+                  pw.Container(width: 1, height: 50, color: PdfColors.grey300),
+                  pw.Row(
+                    children: [
+                      pw.Container(
+                        width: 70,
+                        height: 70,
+                        decoration: pw.BoxDecoration(
+                          border: pw.Border.all(color: PdfColors.grey400),
+                          borderRadius: pw.BorderRadius.circular(8),
+                        ),
+                        child: pw.Padding(
+                          padding: const pw.EdgeInsets.all(3),
+                          child: pw.Image(telegramQr, fit: pw.BoxFit.cover),
+                        ),
                       ),
-                      child: pw.Padding(
-                        padding: const pw.EdgeInsets.all(3),
-                        child: pw.Image(telegramQr, fit: pw.BoxFit.cover),
+                      pw.SizedBox(width: 10),
+                      pw.Column(
+                        crossAxisAlignment: pw.CrossAxisAlignment.start,
+                        children: [
+                          pw.Text(
+                            'Join Community',
+                            style: pw.TextStyle(
+                              fontSize: 10,
+                              fontWeight: pw.FontWeight.bold,
+                            ),
+                          ),
+                          pw.Text(
+                            'Telegram Group',
+                            style: const pw.TextStyle(fontSize: 9),
+                          ),
+                        ],
                       ),
-                    ),
-                    pw.SizedBox(height: 4),
-                    pw.Text(
-                      'Join Community',
-                      style: pw.TextStyle(
-                        fontSize: 8,
-                        fontWeight: pw.FontWeight.bold,
-                      ),
-                      textAlign: pw.TextAlign.center,
-                    ),
-                    pw.Text(
-                      'Telegram Group',
-                      style: const pw.TextStyle(fontSize: 7),
-                      textAlign: pw.TextAlign.center,
-                    ),
-                  ],
-                ),
+                    ],
+                  ),
+                ],
               ),
             ],
           ),
