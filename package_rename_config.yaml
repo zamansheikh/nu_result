@@ -1,0 +1,32 @@
+package_rename_config:
+  android:
+    app_name: "NU Result"
+    package_name: "com.decodersfamily.nu_result"
+    override_old_package: "com.decodersfamily.nu_result"
+    lang: "kotlin"
+
+  ios:
+    app_name: "NU Result"
+    bundle_name: "NU Result"
+    package_name: "com.decodersfamily.nu-result"
+
+  linux:
+    app_name: "NU Result"
+    package_name: "com.decodersfamily.nu_result"
+    exe_name: "nu_result"
+
+  macos:
+    app_name: "NU Result"
+    package_name: "com.decodersfamily.nu-result"
+    copyright_notice: "Copyright © 2024 ProgrammerNexus. All rights reserved."
+
+  web:
+    app_name: "NU Result - CGPA Calculator and Marksheet Generator"
+    short_app_name: "NU Result"
+    description: "National University Result Portal with CGPA Calculator and Marksheet Generator"
+
+  windows:
+    app_name: "NU Result"
+    organization: "ProgrammerNexus"
+    copyright_notice: "Copyright © 2024 ProgrammerNexus. All rights reserved."
+    exe_name: "nu_result"

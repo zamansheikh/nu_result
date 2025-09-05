@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NU Result - CGPA Calculator and Marksheet Generator</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            color: white;
+        }
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .header p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .feature {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        .download-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 10px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+        .download-btn:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            color: white;
+            margin-top: 50px;
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>NU Result</h1>
+            <p>CGPA Calculator and Marksheet Generator</p>
+            <p>Your Ultimate National University Result Portal</p>
+        </header>
+
+        <div class="card">
+            <h2>About NU Result</h2>
+            <p>NU Result is a comprehensive mobile application designed specifically for National University students in Bangladesh. Our app provides an easy and efficient way to check your exam results, calculate your CGPA, and generate professional marksheets.</p>
+            
+            <p>With a user-friendly interface and powerful features, NU Result simplifies the academic journey for thousands of students across the country.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">📊</div>
+                <h3>CGPA Calculator</h3>
+                <p>Accurately calculate your CGPA with our advanced algorithm. Track your academic progress semester by semester.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">📜</div>
+                <h3>Marksheet Generator</h3>
+                <p>Generate professional PDF marksheets instantly. Download and share your academic achievements with ease.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🔍</div>
+                <h3>Result Checker</h3>
+                <p>Check your National University exam results quickly and reliably. Get instant access to your academic performance.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">📱</div>
+                <h3>Mobile Friendly</h3>
+                <p>Optimized for mobile devices with a responsive design that works seamlessly on all screen sizes.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <h3>Secure & Private</h3>
+                <p>Your data is protected with industry-standard security measures. We respect your privacy and keep your information safe.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <h3>Fast & Reliable</h3>
+                <p>Lightning-fast performance with reliable data processing. Get your results and calculations in seconds.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>How to Use</h2>
+            <ol>
+                <li><strong>Download the App:</strong> Get NU Result from the app store</li>
+                <li><strong>Enter Your Details:</strong> Input your registration number and session</li>
+                <li><strong>Check Results:</strong> View your exam results instantly</li>
+                <li><strong>Calculate CGPA:</strong> Use our built-in calculator for accurate CGPA computation</li>
+                <li><strong>Generate Marksheet:</strong> Create and download professional PDF marksheets</li>
+            </ol>
+        </div>
+
+        <div class="download-section">
+            <h2 style="color: white; margin-bottom: 30px;">Download NU Result</h2>
+            <a href="#" class="download-btn">📱 Download for Android</a>
+            <a href="#" class="download-btn">🍎 Download for iOS</a>
+        </div>
+
+        <div class="card">
+            <h2>Contact & Support</h2>
+            <p>Need help or have questions? We're here to assist you!</p>
+            <ul>
+                <li><strong>Developer:</strong> Decoders Family</li>
+                <li><strong>Email:</strong> support@decodersfamily.com</li>
+                <li><strong>Version:</strong> 1.9.2</li>
+            </ul>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2024 Decoders Family. All rights reserved.</p>
+            <p>NU Result - Making academic life easier for National University students</p>
+            <p><a href="privacy-policy.html" style="color: white; text-decoration: underline;">Privacy Policy</a></p>
+        </footer>
+    </div>
+</body>
+</html>
