@@ -1,10 +1,12 @@
 # 📘 NU Result - CGPA Calculator & Marksheet Generator
 
-A modern, clean and intuitive Flutter app designed specifically for **National University (Bangladesh)** students to calculate CGPA and generate professional marksheets.
+A modern, elegant, and comprehensive Flutter app designed specifically for **National University (Bangladesh)** students to calculate CGPA and generate professional academic marksheets with QR codes.
 
 [![Flutter](https://img.shields.io/badge/Flutter-3.24+-blue?logo=flutter)](https://flutter.dev)
 [![Dart](https://img.shields.io/badge/Dart-3.9+-blue?logo=dart)](https://dart.dev)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-zamansheikh/nu_result-blue?logo=github)](https://github.com/zamansheikh/nu_result)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![Downloads](https://img.shields.io/badge/Downloads-1K+-brightgreen)](https://play.google.com/store/apps/details?id=com.zamantech.nu_result)
 
 ---
 
@@ -20,13 +22,16 @@ A modern, clean and intuitive Flutter app designed specifically for **National U
 - **Grade Scale** – Full A+ to F grading system with accurate grade points
 
 ### 📄 Marksheet Generator
-- **Professional PDFs** – Generate university-standard marksheets
-- **Semester Selection** – Choose specific semesters to include
-- **Student Information** – Complete student details and academic info
-- **Detailed Results** – Subject-wise grades, credits, and grade points
-- **Statistics Summary** – Cumulative CGPA, total credits, and semesters
-- **Instant Download** – Direct PDF generation and opening
-- **Official Format** – Follows National University marksheet standards
+- **Professional PDFs** – Generate university-standard academic transcripts
+- **QR Code Integration** – Embedded PlayStore download & Telegram community QR codes
+- **Student Info Persistence** – Save and load student information for easy reuse
+- **Semester Selection** – Choose specific semesters to include in transcript
+- **Student Information** – Complete student details and academic information
+- **Detailed Results** – Subject-wise grades, credits, and grade points calculation
+- **Statistics Summary** – Cumulative CGPA, total credits, and semester count
+- **Instant Download** – Direct PDF generation and automatic opening
+- **Official Format** – "Generated Academic Transcript" format with professional styling
+- **Smart Data Management** – "Load Previous" feature for quick form filling
 
 ### 📊 Analytics & Insights
 - **SGPA Trends** – Visual charts showing semester-wise performance
@@ -110,214 +115,182 @@ lib/
    flutter run
    ```
 
-### Building for Release
-
-```bash
-# Android APK
-flutter build apk --release
-
-# Android App Bundle
-flutter build appbundle --release
-```
+4. **Build APK for release**
+   ```bash
+   flutter build apk --release --split-per-abi
+   ```
 
 ---
 
-## 📱 How to Use
+## 📥 Download & Installation
 
-### CGPA Calculator
+### 🤖 Google Play Store
+[![Get it on Google Play](https://img.shields.io/badge/Get%20it%20on-Google%20Play-brightgreen?style=for-the-badge&logo=google-play)](https://play.google.com/store/apps/details?id=com.zamantech.nu_result)
 
-1. **Launch the App** → Tap "CGPA Calculator" from home screen
-2. **Add Semester** → Tap the floating action button to create a new semester
-3. **Add Subjects** → Enter subject names, credits, and grades
-4. **Real-time Updates** → Watch your SGPA calculate automatically
-5. **View Analytics** → Tap the analytics icon to see performance charts
-
-### Marksheet Generator
-
-1. **Navigate to Generator** → Tap "Marksheet Generator" from home screen
-2. **Fill Student Info** → Enter name, registration, session, and college
-3. **Select Semesters** → Choose which semesters to include
-4. **Generate PDF** → Tap "Generate Marksheet" button
-5. **Download & Share** → PDF opens automatically for viewing/sharing
+### 📱 Direct APK Download
+- **Latest Release**: [GitHub Releases](https://github.com/zamansheikh/nu_result/releases)
+- **Development Build**: Available in the repository
 
 ---
 
-## 🛠️ Technical Details
+## 🤝 Community & Support
+
+### 📢 Join Our Community
+- **Telegram Group**: Scan QR code in generated PDFs for instant access
+- **GitHub Discussions**: [Project Discussions](https://github.com/zamansheikh/nu_result/discussions)
+- **Issue Reporting**: [GitHub Issues](https://github.com/zamansheikh/nu_result/issues)
+
+### 📧 Contact Developer
+- **Email**: zamantech.dev@gmail.com
+- **GitHub**: [@zamansheikh](https://github.com/zamansheikh)
+
+---
+
+## 🛡️ Privacy & Security
+
+### 🔒 Data Protection
+- **100% Offline**: No data transmission to external servers
+- **Local Storage**: All data stored securely using SharedPreferences
+- **No Tracking**: Zero analytics or behavior tracking
+- **No Ads**: Clean, advertisement-free experience
+- **Open Source**: Complete transparency in data handling
+
+### 📋 Privacy Policy
+- **Full Policy**: [Privacy Policy](docs/privacy-policy.html)
+- **Last Updated**: September 5, 2025
+- **GDPR Compliant**: European data protection standards
+
+---
+
+## 🛠️ Technical Specifications
 
 ### Dependencies
-- **flutter**: SDK framework
-- **shared_preferences**: Local data storage
-- **pdf**: PDF generation
+- **flutter**: Cross-platform SDK framework
+- **shared_preferences**: Secure local data storage  
+- **pdf**: Professional PDF generation
 - **path_provider**: File system access
-- **open_file**: PDF viewer integration
-- **fl_chart**: Beautiful charts and analytics
-- **material3**: Modern design system
+- **open_file**: Integrated PDF viewer
+- **fl_chart**: Interactive analytics charts
+- **material3**: Modern Material Design 3
 
-### Data Storage
-- **Local Storage**: SharedPreferences for semester data
-- **Data Format**: JSON serialization for complex objects
-- **Persistence**: All data saved automatically
-
-### PDF Generation
-- **Library**: flutter_pdf package
-- **Format**: A4 size, professional layout
-- **Content**: Student info, semester tables, statistics
-- **Branding**: University logo and app attribution
+### Architecture
+- **Clean Architecture**: Separation of concerns with feature-based modules
+- **Data Persistence**: JSON serialization with SharedPreferences
+- **PDF Generation**: Custom layouts with QR code integration
+- **State Management**: StatefulWidget with efficient rebuilding
+- **Performance**: Optimized rendering and memory management
 
 ---
 
-## 🎯 Key Improvements
+## 🎯 Key Improvements (Version 2.0)
 
-### From Previous Version
-- **Simplified Focus** → Only essential features (CGPA + Marksheet)
-- **Modern Design** → Complete UI/UX redesign with Material 3
-- **Better Performance** → Optimized code and smooth animations
-- **Enhanced UX** → Intuitive navigation and user flows
-- **Professional Output** → High-quality PDF marksheets
-- **Clean Architecture** → Maintainable and scalable codebase
+### ✅ Enhanced Features
+- **Modern UI/UX** → Complete redesign with Material Design 3
+- **QR Code Integration** → Embedded community and download links in PDFs
+- **Data Persistence** → Smart "Load Previous" functionality for student info
+- **Professional PDFs** → University-standard academic transcript format
+- **Analytics Dashboard** → Visual performance tracking with interactive charts
+- **Offline-First** → Complete functionality without internet connectivity
 
-### Removed Features
-- Result scraping functionality (web-based)
-- Firebase integration
-- AdMob advertisements
-- Complex routing system
-- Multiple app themes
-
----
-
-## 🔮 Future Enhancements
-
-- [ ] Cloud sync for data backup
-- [ ] Export data to Excel/CSV
-- [ ] Grade prediction algorithms
-- [ ] Scholarship eligibility calculator
-- [ ] Batch PDF generation
-- [ ] Print-friendly marksheet layouts
+### ❌ Removed Legacy Features
+- Result web scraping functionality
+- Firebase cloud integration
+- AdMob advertisements and tracking
+- Complex multi-theme system
+- Unnecessary external dependencies
 
 ---
 
-## 👨‍💻 Developer
+## 🔮 Future Roadmap
 
-**Zaman Sheikh**
-- GitHub: [@zamansheikh](https://github.com/zamansheikh)
+- [ ] **Cloud Backup**: Optional data synchronization across devices
+- [ ] **Export Options**: Excel/CSV export for academic records
+- [ ] **Grade Prediction**: AI-powered semester performance forecasting
+- [ ] **Scholarship Calculator**: Eligibility assessment for academic scholarships
+- [ ] **Batch Operations**: Multiple marksheet generation with templates
+- [ ] **Print Optimization**: Enhanced layouts for direct printing
+- [ ] **Multi-Language**: Full Bengali language support
+- [ ] **Dark Mode**: System-adaptive theme switching
+
+---
+
+## 🛠️ Development & Contribution
+
+### Build from Source
+```bash
+# Clone repository
+git clone https://github.com/zamansheikh/nu_result.git
+cd nu_result
+
+# Install dependencies
+flutter pub get
+
+# Run on device/emulator
+flutter run
+
+# Build release APK
+flutter build apk --release --split-per-abi
+```
+
+### Contributing Guidelines
+1. **Fork** the repository
+2. **Create** a feature branch: `git checkout -b feature/amazing-feature`
+3. **Commit** your changes: `git commit -m 'Add amazing feature'`
+4. **Push** to branch: `git push origin feature/amazing-feature`
+5. **Open** a Pull Request with detailed description
+
+### Development Environment
+- **Flutter SDK**: 3.24+
+- **Dart SDK**: 3.9+
+- **Android Studio**: Latest stable version
+- **Target SDK**: Android 14 (API 34)
+- **Minimum SDK**: Android 5.0 (API 21)
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+### License Summary
+- ✅ **Commercial Use**: Allowed
+- ✅ **Modification**: Allowed  
+- ✅ **Distribution**: Allowed
+- ✅ **Private Use**: Allowed
+- ❌ **Liability**: Not provided
+- ❌ **Warranty**: Not provided
 
 ---
 
 ## 🙏 Acknowledgments
 
-- **National University, Bangladesh** for the academic standards
-- **Flutter Team** for the amazing framework
-- **Material Design** for the design system
-- **NU Students** for feedback and feature requests
-
----
-
-**Built with ❤️ for National University Students**
-
-*Experience the modern way to calculate CGPA and generate professional marksheets!*
-
-- 🔍 **Profile Lookup** – View student profile using registration/roll number.
-- 📊 **Result Checker** – Get results for any exam (Professional, Honours, Degree, etc.).
-- 📄 **PDF Export** – Download and share your marksheet as a well-formatted PDF.
-- 🔐 **Secure & Fast** – Reliable connection to NU’s result system with optimized loading.
-- 🌓 **Dark Mode Support** – Smooth UI with light and dark mode.
-
----
-
-## 🧱 Built With
-
-- **Flutter** – Cross-platform app development.
-- **Dart** – Fast and expressive language.
-- **GetX** – State management and routing.
-- **PDF Library** – For marksheet export.
-- **Clean Architecture** – Scalable and testable codebase.
-
----
-
-## 📱 Screenshots
-
-> _Add screenshots here after development – UI previews of profile, result view, and PDF download._
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- **Flutter SDK**: [Install Flutter](https://docs.flutter.dev/get-started/install)
-- **Dart SDK**: Comes with Flutter.
-- **IDE**: Android Studio or VS Code.
-
-### Run Locally
-
-```bash
-git clone https://github.com/zamansheikh/nu_result.git
-cd nu_result
-flutter pub get
-flutter run
-```
-
----
-
-## 📦 Folder Structure (Clean Architecture)
-
-```
-lib/
-├── core/
-├── features/
-│   ├── profile/
-│   ├── result/
-│   ├── pdf_export/
-├── shared/
-```
-
----
-
-## 🛠️ Contribution
-
-Contributions are welcome! Feel free to fork the repo and submit a pull request.
-
-### Steps to Contribute
-
-1. Fork the repository.
-2. Create a new branch for your feature:
-   ```bash
-   git checkout -b feature/YourFeature
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add: Your feature"
-   ```
-4. Push to your branch:
-   ```bash
-   git push origin feature/YourFeature
-   ```
-5. Open a pull request.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-## 🔗 Related Projects
-
-- [National University Bangladesh Result Site](http://www.nu.ac.bd/results/)
+- **Flutter Team** – For the incredible cross-platform framework
+- **Material Design Team** – For the beautiful design system guidelines
+- **National University Students** – For valuable feedback and feature requests
+- **Open Source Community** – For inspiring transparent development
+- **Beta Testers** – For helping perfect the user experience
 
 ---
 
 ## 👨‍💻 Author
 
-Developed by [Zaman Sheikh](https://github.com/zamansheikh).
+**Zaman Sheikh**
+- 🌐 **GitHub**: [@zamansheikh](https://github.com/zamansheikh)
+- 📧 **Email**: zamantech.dev@gmail.com
+- 💼 **Portfolio**: [Zaman Sheikh](https://github.com/zamansheikh)
 
 ---
 
-> _If you like this project, consider giving it a ⭐ on GitHub!_
+## ⭐ Support This Project
+
+If this app helped you in your academic journey, consider:
+- ⭐ **Star this repository** on GitHub
+- 🐛 **Report bugs** or suggest features via Issues
+- 💬 **Join our Telegram community** (QR code in generated PDFs)
+- 📢 **Share with fellow students** who might benefit from this app
+
+---
+
+**🎓 Built with ❤️ for National University Students**
+
+*Experience the modern, professional way to calculate CGPA and generate academic marksheets with embedded QR codes for enhanced connectivity!*
