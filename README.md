@@ -6,7 +6,7 @@ A modern, elegant, and comprehensive Flutter app designed specifically for **Nat
 [![Dart](https://img.shields.io/badge/Dart-3.9+-blue?logo=dart)](https://dart.dev)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-zamansheikh/nu_result-blue?logo=github)](https://github.com/zamansheikh/nu_result)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![Downloads](https://img.shields.io/badge/Downloads-1K+-brightgreen)](https://play.google.com/store/apps/details?id=com.zamantech.nu_result)
+[![Downloads](https://img.shields.io/badge/Downloads-1K+-brightgreen)](https://play.google.com/store/apps/details?id=com.decodersfamily.nu_result)
 
 ---
 
@@ -14,19 +14,19 @@ A modern, elegant, and comprehensive Flutter app designed specifically for **Nat
 
 ### 🧮 CGPA Calculator
 - **Modern Interface** – Clean, intuitive design with smooth animations
-- **Semester Management** – Add, edit, and organize multiple semesters
+- **Semester Management** – Add, edit, and organize multiple semesters locally
 - **Real-time Calculation** – Instant SGPA and CGPA calculations as you type
 - **Grade Visualization** – Color-coded grades with grade point display
-- **Data Persistence** – All your data is saved locally and securely
+- **Local Storage Only** – All calculations stored on your device, no cloud sync
 - **Flexible Credits** – Support for 1-6 credit courses
 - **Grade Scale** – Full A+ to F grading system with accurate grade points
 
 ### 📄 Marksheet Generator
-- **Professional PDFs** – Generate university-standard academic transcripts
+- **Professional PDFs** – Generate university-standard academic transcripts locally
 - **QR Code Integration** – Embedded PlayStore download & Telegram community QR codes
-- **Student Info Persistence** – Save and load student information for easy reuse
+- **Static Generation** – Create PDFs directly on your device without any server
 - **Semester Selection** – Choose specific semesters to include in transcript
-- **Student Information** – Complete student details and academic information
+- **Student Information Forms** – Fill in student details for transcript generation
 - **Detailed Results** – Subject-wise grades, credits, and grade points calculation
 - **Statistics Summary** – Cumulative CGPA, total credits, and semester count
 - **Instant Download** – Direct PDF generation and automatic opening
@@ -125,7 +125,7 @@ lib/
 ## 📥 Download & Installation
 
 ### 🤖 Google Play Store
-[![Get it on Google Play](https://img.shields.io/badge/Get%20it%20on-Google%20Play-brightgreen?style=for-the-badge&logo=google-play)](https://play.google.com/store/apps/details?id=com.zamantech.nu_result)
+[![Get it on Google Play](https://img.shields.io/badge/Get%20it%20on-Google%20Play-brightgreen?style=for-the-badge&logo=google-play)](https://play.google.com/store/apps/details?id=com.decodersfamily.nu_result)
 
 ### 📱 Direct APK Download
 - **Latest Release**: [GitHub Releases](https://github.com/zamansheikh/nu_result/releases)
@@ -141,19 +141,22 @@ lib/
 - **Issue Reporting**: [GitHub Issues](https://github.com/zamansheikh/nu_result/issues)
 
 ### 📧 Contact Developer
-- **Email**: zamantech.dev@gmail.com
+- **Email**: zaman6545@gmail.com
 - **GitHub**: [@zamansheikh](https://github.com/zamansheikh)
+- **Portfolio**: [zamansheikh.com](https://zamansheikh.com)
+- **Company**: [ProgrammerNexus](https://www.programmernexus.com)
 
 ---
 
 ## 🛡️ Privacy & Security
 
 ### 🔒 Data Protection
-- **100% Offline**: No data transmission to external servers
-- **Local Storage**: All data stored securely using SharedPreferences
-- **No Tracking**: Zero analytics or behavior tracking
-- **No Ads**: Clean, advertisement-free experience
-- **Open Source**: Complete transparency in data handling
+- **100% Static App**: No data collection or transmission to any servers
+- **Purely Local Operations**: All calculations and PDF generation happen on your device
+- **No Data Storage**: App doesn't save or store any personal information
+- **No Tracking**: Zero analytics, no behavior monitoring, no user profiling
+- **No Internet Required**: Complete offline functionality, no network permissions
+- **No Ads**: Clean, advertisement-free experience with no ad tracking
 
 ### 📋 Privacy Policy
 - **Full Policy**: [Privacy Policy](docs/privacy-policy.html)
@@ -274,10 +277,11 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 👨‍💻 Author
 
-**Zaman Sheikh**
+**Zaman Sheikh** - *Founder, ProgrammerNexus*
 - 🌐 **GitHub**: [@zamansheikh](https://github.com/zamansheikh)
-- 📧 **Email**: zamantech.dev@gmail.com
-- 💼 **Portfolio**: [Zaman Sheikh](https://github.com/zamansheikh)
+- 📧 **Email**: zaman6545@gmail.com
+- 💼 **Portfolio**: [zamansheikh.com](https://zamansheikh.com)
+- 🏢 **Company**: [ProgrammerNexus](https://www.programmernexus.com)
 
 ---
 
