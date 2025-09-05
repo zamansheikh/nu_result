@@ -49,7 +49,7 @@ flutter:
   assets:
     - assets/icon/
     - assets/svg/
-    - assets/qr.png
+    - assets/qr/
     - assets/fonts/TiroBangla-Regular.ttf
     - assets/fonts/TiroBangla-Italic.ttf
     - assets/fonts/OpenSans-Regular.ttf
